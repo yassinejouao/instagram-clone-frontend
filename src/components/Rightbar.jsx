@@ -56,7 +56,7 @@ function Rightbar() {
                         },
                       }
                     );
-                    dispatch({ type: "UNFOLLOW", payload: f._id });
+                    await dispatch({ type: "UNFOLLOW", payload: f._id });
                     window.location.reload(false);
                   }}
                 >
