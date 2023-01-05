@@ -4,6 +4,9 @@ const INITIAL_STATE = {
   user: JSON.parse(localStorage.getItem("user") || null),
   error: false,
 };
+
+// no changes
+
 const AuthReducer = (state, action) => {
   switch (action.type) {
     case "LOGIN_SUCCESS":
